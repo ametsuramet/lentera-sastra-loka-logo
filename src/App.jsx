@@ -50,7 +50,7 @@ const App = () => {
   ];
 
   const LogoIcon = ({ className = "w-32 h-32" }) => (
-    <img src="/logo.png" alt="Logo Lentera Sastra Loka" className={className} />
+    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo Lentera Sastra Loka" className={className} />
   );
 
   const handleDownloadPDF = async () => {
@@ -99,7 +99,7 @@ const App = () => {
       icon: <Coffee className="w-6 h-6" />,
       rule: "Logo dicetak di sisi tengah dengan jarak aman 2cm dari bibir gelas.",
       preview: (
-        <img src="/mug.png" alt="Mockup Mug" className="max-w-full max-h-full object-contain rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}mug.png`} alt="Mockup Mug" className="max-w-full max-h-full object-contain rounded-lg" />
       )
     },
     {
@@ -107,7 +107,7 @@ const App = () => {
       icon: <FileText className="w-6 h-6" />,
       rule: "Logo diletakkan di pojok kiri atas. Alamat menggunakan warna Corporate Earth di bagian bawah.",
       preview: (
-        <img src="/kop-surat.png" alt="Mockup Kop Surat" className="max-w-full max-h-full object-contain rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}kop-surat.png`} alt="Mockup Kop Surat" className="max-w-full max-h-full object-contain rounded-lg" />
       )
     },
     {
@@ -115,7 +115,7 @@ const App = () => {
       icon: <CreditCard className="w-6 h-6" />,
       rule: "Sisi depan hanya berisi logo (minimalis). Sisi belakang berisi data diri dengan font Skia.",
       preview: (
-        <img src="/kartu-nama.png" alt="Mockup Kartu Nama" className="max-w-full max-h-full object-contain rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}kartu-nama.png`} alt="Mockup Kartu Nama" className="max-w-full max-h-full object-contain rounded-lg" />
       )
     },
     {
@@ -123,7 +123,7 @@ const App = () => {
       icon: <Globe className="w-6 h-6" />,
       rule: "Logo diletakkan di kiri navigasi (sticky header). Favicon menggunakan simbol Loka (kuning).",
       preview: (
-        <img src="/website.png" alt="Mockup Website" className="max-w-full max-h-full object-contain rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}website.png`} alt="Mockup Website" className="max-w-full max-h-full object-contain rounded-lg" />
       )
     },
     {
@@ -131,7 +131,7 @@ const App = () => {
       icon: <Building2 className="w-6 h-6" />,
       rule: "Signage menggunakan material akrilik timbul dengan pencahayaan LED warm-white dari belakang.",
       preview: (
-        <img src="/gedung.png" alt="Mockup Gedung Kantor" className="max-w-full max-h-full object-contain rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}gedung.png`} alt="Mockup Gedung Kantor" className="max-w-full max-h-full object-contain rounded-lg" />
       )
     }
   ];
